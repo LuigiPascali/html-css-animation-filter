@@ -96,10 +96,34 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation: girare 2s linear infinite;
 }
-.ex-11-icon {
+
+@keyframes girare {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+.ex-11-icon:hover {
     font-size: 60px;
+    animation: girare-3-4 4s linear
 }
+
+@keyframes girare-3-4 {
+    0% {
+        transform: rotate(0);
+    }
+
+    65% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
